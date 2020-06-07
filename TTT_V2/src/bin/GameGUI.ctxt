@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=GameGUI
+comment0.text=\r\n\ <p>The\ class\ configures\ the\ game\ GUI\ and\ handles\ all\ events\ occuring\ in\ the\ GUI.\r\n\ It\ extends\ <>code>JFrame</code>\ and\ implemets\ <code>ActionListener</code>.</p>\r\n\ \r\n\ @author\ Dragoslav\ Vesic\r\n\ @version\ 30/12/2017\r\n
+comment1.params=
+comment1.target=GameGUI()
+comment1.text=\r\n\ <p>Constructor\ configures\ the\ game\ GUI\ setup.\ Frame\ properties\ are\ determined\ and\ \r\n\ 9\ tolen\ buttons\ are\ added\ to\ the\ frame.\ Three\ function\ buttons\:\ Start,\ New\ Game\ \r\n\ and\ Exit\ and\ three\ label\ objects\ are\ also\ added\ to\ the\ frame.\ \r\n\ All\ buttons\ declare\ their\ <code>ActionListener</code>.\r\n\ Game\ <code>Board</code>\ object\ is\ then\ created.</p>\r\n
+comment2.params=
+comment2.target=void\ gamePlay()
+comment2.text=\r\n\ <p>This\ method\ implements\ the\ basic\ process\ of\ the\ game.\r\n\ Before\ the\ game\ starts,\ it\ determines\ who\ will\ make\ the\ first\r\n\ move\ (be\ player\ 1).\ If\ player\ 1\ is\ Computer,\ it\ sets\ the\ player\ 2\ \r\n\ to\ <code>true</code>.\ Computer\ turn\ sets\ the\ evaluation\ of\ next\ \r\n\ move\ corresponding\ to\ current\ board\ setup,\ and\ consequent\ press\r\n\ of\ the\ button.</p>\r\n
+comment3.params=
+comment3.target=int\ randomGenerator()
+comment3.text=\r\n\ <p>This\ method\ generates\ random\ number\ between\ 0\ and\ 100.</p>\r\n\ \r\n\ @return\ \ \ \ \ \ integer\ between\ 0\ and\ 100\r\n
+comment4.params=
+comment4.target=void\ clearButtons()
+comment4.text=\r\n\ <p>This\ method\ clears\ all\ markers\ on\ the\ game\ board\ GUI.\r\n\ It's\ called\ when\ game\ starts.</p>\r\n
+comment5.params=
+comment5.target=void\ labelUpdate()
+comment5.text=\r\n\ <p>This\ method\ updates\ the\ result\ data\ in\ the\ game\ board\ GUI.</p>\r\n
+comment6.params=e
+comment6.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment6.text=\r\n\ <p>This\ is\ a\ redefinition\ of\ the\ ActionPerformed\ method\ of\ the\ \r\n\ JFrame\ class.\ The\ button\ click\ event\ occurs\ in\ the\ method.</p>\r\n\ <p>Start\ Button\ Press</p>\r\n\ <p>If\ the\ game\ is\ in\ progress,\ no\ action\ is\ taken.\ \r\n\ Selects\ the\ shape\ of\ the\ <code>Computer</code>\ player\ and\ generates\ the\ \r\n\ corresponding\ object\ by\ the\ number\ generator.\ Initialize\ the\r\n\ <code>gameBoard</code>\ object\ that\ handles\ the\ <code>Board</code>\ data.\ \r\n\ Initialize\ the\ game\ progressive\ elements\ <code>startplayer,\ player1</code>\ and\r\n\ <code>player2</code>\ to\ <code>false</code>.\ Lastly,\ we\ invoke\ method\ \r\n\ <code>gameplay()</code>,\ the\ basic\ process\ of\ the\ game.</p>\r\n\ <p>New\ Game\ Button\ Press</p>\r\n\ <p>At\ this\ stage,\ a\ selection\ window\ will\ appear\ asking\ whether\ you\ want\r\n\ to\ cancel\ the\ current\ match\ and\ proceed\ with\ the\ new\ match.\ Press\ 'YES'\ \r\n\ to\ initialize\ the\ current\ board\ data,\ score\ results\ and\ GUI\ display.\ \r\n\ Next,\ we\ call\ <code>gameplay()</code>,\ the\ basic\ process\ of\ the\ game.</p>\r\n\ <p>Exit\ Butoon\ Press</p>\r\n\ <p>Exit\ the\ game\ and\ close\ the\ GUI</p>\r\n\ <p>Human\ Player\ Move</p>\r\n\ <p>Marks\ the\ user\ on\ the\ pressed\ button\ and\ location\ of\ the\ pressed\ button\ \r\n\ is\ obtained,\ then\ updates\ the\ board\ data\ according\ to\ identifier.\ Control\ \r\n\ transfers\ to\ <code>Computer</code>\ player.\ It\ confirms\ the\ winner\ based\ \r\n\ on\ updated\ board\ data.\ Displays\ the\ winner\ notification\ and\ initialise\ the\ \r\n\ board\ markers,\ then\ update\ the\ result.</p>\r\n\ <p>Computer\ Player\ Move</p>\r\n\ <p>Same\ as\ above.</p>\r\n\ <p>Human\ Player\ Illegal\ Move</p>\r\n\ <p>Displays\ the\ error\ message\ dialogue.</p>\r\n\ \r\n\ @param\ e\ \ \ \ \ \ \ \ \ occured\ event\ object\r\n
+numComments=7

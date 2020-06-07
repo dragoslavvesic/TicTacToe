@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=ComputerPlayer
+comment0.text=\r\n\ <p>This\ class\ manages\ the\ selection\ method\ of\ the\ Computer\ player.\ \r\n\ It\ is\ an\ abstract\ class\ from\ which\ classes\ <code>SmartComputer</code>\r\n\ and\ <code>NaiveComputer</code>\ derive\ from.</p>\r\n\ \r\n\ @author\ \ \ \ \ \ \ Dragoslav\ Vesic\r\n\ @version\ \ \ \ \ \ 30/12/2017\r\n
+comment1.params=score
+comment1.target=int\ bestMove(int[])
+comment1.text=\r\n\ <p>Evaluates\ the\ best\ move\ among\ options.</p>\r\n\ \r\n\ @param\ score[]\ \ \ \ \ \ \ array\ of\ int\ type\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ returns\ the\ index\ of\ highest\ value\ among\ the\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <code>score[]</code>\r\n
+comment2.params=num\ squares
+comment2.target=int\ evalMove(int,\ char[][])
+comment2.text=\r\n\ <p>The\ method\ determines\ the\ gain\ of\ the\ computer\ move\ at\ \r\n\ <code>num</code>\ position\ in\ the\ current\ squares.\ The\ evaluation\ gives\ \r\n\ better\ value\ for\ better\ position\ and\ position\ is\ evaluated\ \r\n\ by\ calculating\ a\ score\ the\ following\ way\:\ increase\ the\ score\r\n\ for\ desirable\ configurations/events\ and\ decrease\ it\ for\ \r\n\ undesirable\ ones.\ The\ feature\ focuses\ on\ the\ number\ of\ threats.\r\n\ </p>\r\n\ \r\n\ @param\ num\ \ \ \ \ \ \ \ \ \ \ position\ to\ set\ next\ token\r\n\ @param\ squares[]\ \ \ \ \ current\ data\ of\ the\ <code>Board</code>\ object\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ gain\ of\ putting\ token\ to\ <code>num</code>\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ position\ in\ the\ current\ board\r\n
+comment3.params=squares\ player
+comment3.target=int\ scoreBoard(char[][],\ char)
+comment3.text=\r\n\ <p>Evaluates\ the\ score\ of\ the\ player\ for\ the\ current\ board\r\n\ by\ applying\ method\ <code>scoreToken()</code>\ to\ every\ position\ of\ squares\ \r\n\ and\ returns\ the\ result.</p>\r\n\ \r\n\ @param\ squares[][]\ \ \ \ \ \ \ board\ data\ for\ estimation\r\n\ @param\ player\ \ \ \ \ \ \ \ \ \ \ \ mark\ of\ the\ player\ to\ be\ estimated\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ gain\ of\ the\ player\ for\ the\ current\ board\r\n\ @see\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#scoreToken()\r\n
+comment4.params=squares\ row\ col\ player
+comment4.target=int\ scoreToken(char[][],\ int,\ int,\ char)
+comment4.text=\r\n\ <p>The\ degree\ of\ setting\ the\ move\ is\ obtained\ by\ searching\ in\ up,\ \r\n\ up-diagonale,\ downward\ and\ downward-diagonale\ direction.\ If\ tripple-same\ set\r\n\ is\ possible,\ it\ gives\ higher\ gain.</p>\r\n\ \r\n\ @param\ squares[][]\ \ \ \ \ \ \ board\ data\ to\ estimate\r\n\ @param\ row\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ row\ of\ token\ position\ to\ be\ estimated\r\n\ @param\ col\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ column\ of\ token\ position\ to\ be\ estimated\r\n\ @param\ player\ \ \ \ \ \ \ \ \ \ \ \ mark\ of\ the\ player\ to\ be\ estimated\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <code>int</code>\ returns\ the\ gain\ given\ for\ the\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <code>row</code>\ and\ <code>col</code>\ position\ in\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ board\ data\r\n
+comment5.params=num\ squares
+comment5.target=boolean\ checkMove(int,\ char[][])
+comment5.text=\r\n\ <p>The\ method\ determines\ if\ the\ move\ can\ be\ set\ at\ the\ <code>num</code>\r\n\ position\ of\ 'squares'.</p>\r\n\ \r\n\ @param\ num\ \ \ \ \ \ \ \ \ \ \ position\ to\ check\r\n\ @param\ squares[][]\ \ \ <code>Board</code>\ data\ to\ be\ checked\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ <code>true</code>\ if\ location\ is\ empty,\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ otherwise\ <code>false</code>\r\n\ \r\n
+comment6.params=squares
+comment6.target=int\ evalAllMoves(char[][])
+comment6.text=\r\n\ <p>The\ abstract\ method\ that\ is\ implemented\ in\ child\ classes\r\n\ <code>SmartComputer</code>\ and\ <code>NaiveComputer</code>.</p>\r\n\ \r\n\ @param\ squares[][]\ \ \ \ \ \ current\ <code>Board</code>\ data\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ position\ to\ place\ the\ next\ move\ \r\n
+comment7.params=
+comment7.target=char\ getPlayer()
+comment7.text=\r\n\ <p>Standard\ getter\ method\ that\ returns\ the\ <code>char</code>\ of\ the\ player.</p>\r\n\ \r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <code>char</code>\ of\ the\ player\ \r\n
+numComments=8

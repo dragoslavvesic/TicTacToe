@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Board
+comment0.text=\r\n\ <p>This\ class\ manages\ board\ game\ data.</p>\r\n\ \r\n\ @author\ \ \ \ \ \ \ Dragoslav\ Vesic\r\n\ @version\ \ \ \ \ \ 30/12/2017\r\n
+comment1.params=
+comment1.target=Board()
+comment1.text=\r\n\ <p>Initialises\ the\ game\ squares\ to\ 0.</p>\r\n\ \r\n\ @see\ \ \ \ \ \ \ \ \ \#reset()\r\n
+comment2.params=player\ num
+comment2.target=void\ setMove(char,\ int)
+comment2.text=\r\n\ <p>This\ function\ sets\ the\ token\ to\ the\ Nth\ position\ on\ the\ board.</p>\r\n\ \r\n\ @param\ player\ \ \ \ player\ character\ that\ is\ set\ in\ the\ board\ (<code>X</code>\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ or\ <code>O</code>).\r\n\ @param\ num\ \ \ \ \ \ \ position\ of\ set\ token\ (0\ to\ 8)\r\n
+comment3.params=
+comment3.target=void\ reset()
+comment3.text=\r\n\ <p>Sets\ the\ elements\ of\ the\ board\ to\ blank\ ('-').</p>\r\n
+comment4.params=
+comment4.target=char[][]\ getSquares()
+comment4.text=\r\n\ <p>Standard\ getter\ method\ that\ returns\ the\ board\ data\ of\r\n\ the\ current\ <code>Board</code>\ object.\r\n\ \r\n\ @return\ \ \ \ \ \ returns\ the\ board\ data\ of\ the\ current\ <code>Board</code>\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ object.\r\n
+comment5.params=
+comment5.target=boolean\ isFull()
+comment5.text=\r\n\ <p>Checks\ if\ the\ board\ is\ full\ or\ not.</p>\r\n\ \r\n\ @return\ \ \ \ \ \ <code>true</code>\ if\ board\ is\ full\r\n
+comment6.params=num
+comment6.target=boolean\ checkMove(int)
+comment6.text=\r\n\ Checks\ the\ correctness\ of\ the\ game\ move.\r\n\ \r\n\ @param\ num\ \ \ \ \ \ \ position\ to\ check\r\n\ @return\ \ \ \ \ \ \ \ \ \ <code>true</code>\ if\ param\ set\ marks\ the\ correct\ move,\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ otherwise\ <code>false</code>\r\n
+comment7.params=
+comment7.target=char\ getWinner()
+comment7.text=\r\n\ <p>Confirms\ if\ there\ is\ a\ winner\ in\ the\ game.\ It\ stores\ the\ possible\ cases\r\n\ in\ <code>win[]</code>\ (8\ of\ them)\ and\ checking\ if\ they\ are\ 'XXX'\ or\ 'OOO'.</p>\r\n\ \r\n\ @return\ \ \ \ \ \ \ \ \ \ <code>char</code>\ of\ the\ winner\ if\ there\ is\ one,\ otherwise\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ returns\ blank\ ('-').\r\n
+numComments=8
