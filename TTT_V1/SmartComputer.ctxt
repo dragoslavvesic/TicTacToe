@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=SmartComputer
+comment0.text=\r\n\ <p>Class\ extends\ the\ parent\ class\ <code>ComputerPlayer</code>\ and\ handles\ computer\ player\r\n\ moves\ with\ suitable\ defensive\ strategy.<p>\r\n\ \r\n\ @author\ \ \ \ \ \ Dragoslav\ Vesic\r\n\ @version\ \ \ \ \ 30/12/2017\r\n
+comment1.params=mark
+comment1.target=SmartComputer(char)
+comment1.text=\r\n\ <p>Initiates\ the\ object\ of\ the\ class\ <code>SmartComputer</code><p>\r\n\ \r\n\ param\ mark\ \ \ \ \ \ \ marks\ the\ current\ player\ move\ (X\ or\ O)\ to\ be\ set\r\n
+comment2.params=squares
+comment2.target=int\ evalAllMoves(char[][])
+comment2.text=\r\n\ <p>The\ method\ evaluates\ the\ best\ possible\ move\ to\ be\ played.\r\n\ It\ is\ inhereted\ from\ the\ parent\ class.</p>\r\n\ \r\n\ @param\ squares\ \ \ \ \ \ \ data\ of\ current\ Board\ object\r\n\ @return\ \ \ \ \ \ \ \ \ \ \ \ \ \ position\ that\ offers\ the\ best\ possible\ location\r\n
+numComments=3

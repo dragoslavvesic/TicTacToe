@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=GameDrive
+comment0.text=\r\n\ <p>This\ class\ contains\ the\ main\ driver\ for\ the\ project.\ It\ calls\ the\ \r\n\ constructor\ of\ the\ class\ that\ delivers\ the\ GUI.</p>\r\n\ \r\n\ @author\ Dragoslav\ Vesic\r\n\ @version\ 30/12/2017\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

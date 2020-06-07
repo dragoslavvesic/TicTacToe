@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=SmartComputerTest
+comment0.text=\r\n\ The\ class\ <code>SmartComputerTest</code>\ contains\ tests\ for\ the\ class\ <code>{@link\ SmartComputer}</code>.\r\n\r\n\ @author\ \ \ \ \ \ Dragoslav\ Vesic\r\n\ @version\ \ \ \ \ 07/01/2018\r\n
+comment1.params=
+comment1.target=void\ setUp()
+comment1.text=\r\n\ Perform\ pre-test\ initialization.\r\n\r\n\ @throws\ Exception\ \ \ \ \ \ \ \ if\ the\ initialization\ fails\ for\ some\ reason\r\n\r\n
+comment2.params=
+comment2.target=void\ tearDown()
+comment2.text=\r\n\ Perform\ post-test\ clean-up.\r\n\r\n\ @throws\ Exception\ \ \ \ \ \ \ \ if\ the\ clean-up\ fails\ for\ some\ reason\r\n\r\n
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment3.text=\r\n\ Launch\ the\ test.\r\n\r\n\ @param\ args\ \ \ \ \ \ \ \ \ \ the\ command\ line\ arguments\r\n\r\n
+comment4.params=
+comment4.target=void\ testSmartComputer_1()
+comment4.text=\r\n\ Run\ the\ <code>SmartComputer(char)</code>\ constructor\ test.\r\n\r\n\ @throws\ Exception\r\n\r\n
+comment5.params=
+comment5.target=void\ checkMove_1()
+comment5.text=\r\n\ Run\ the\ boolean\ <code>checkMove(int\ num,\ char\ squares[][])</code>\ method\ test.\r\n\r\n\ @throws\ Exception\r\n\r\n
+numComments=6
